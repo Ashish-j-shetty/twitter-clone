@@ -1,0 +1,133 @@
+:root {
+  color-scheme: dark;
+  --border-color: rgb(47, 51, 54);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  justify-items: center;
+  grid-template-rows: 100vh;
+}
+.menu-div {
+  width: 7rem;
+}
+
+.menu {
+  display: grid;
+
+  grid-template-rows: auto;
+  grid-row-gap: 2rem;
+  position: fixed;
+  top: 7rem;
+}
+.personal--info {
+  position: fixed;
+  bottom: 1rem;
+}
+
+.logo {
+  position: fixed;
+  top: 2rem;
+}
+.header-section {
+  position: fixed;
+  top: 0;
+  left: 32%;
+  margin: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.posts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.iconbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  width: 100%;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.btn-tweet {
+  position: absolute;
+  margin-right: -35rem;
+}
+
+.img-profile {
+  border-radius: 50%;
+  height: 3.4rem;
+}
+
+.tweet-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.section-profile {
+  display: flex;
+}
+
+.tweet-text {
+  align-self: center;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.partition {
+  height: 12px;
+  background-color: rgb(21, 24, 28);
+  border-top: 1px solid rgb(47, 51, 54);
+  border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.tweets {
+  display: flex;
+}
+
+.tweet--body {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.user--options {
+  display: flex;
+}
+.profile {
+  display: flex;
+}
+.profile-pic {
+  display: block;
+}
+
+.profile-pic img {
+  width: 50px;
+  border-radius: 50%;
+}
+.section-2 {
+  display: block;
+  width: 100%;
+}
+
+.section-2 input {
+  margin: 5px;
+  padding: 1rem 0;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  height: 10px;
+}
+
+.section-3 {
+  align-self: flex-end;
+}
