@@ -5,65 +5,294 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./twitter.css" />
+    <script src="https://use.fontawesome.com/4d39a27bae.js"></script>
     <title>Twitter-clone</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="menu-div">
-        <div class="logo">icon</div>
-        <div class="menu">
-          <div>Home</div>
-          <div>Explore</div>
-          <div>Notification</div>
-          <div>Messages</div>
-          <div>Bookmarks</div>
-          <div>Lists</div>
-          <div>Profiles</div>
-          <div>More</div>
-          <button>Tweet</button>
+        <div class="logo">
+          <span><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span>
         </div>
-        <div class="personal--info">Personal info</div>
+        <div class="menu">
+          <div>
+            <span><i class="fa fa-home" aria-hidden="true"></i> </span>
+            <div class="navitem">Home</div>
+          </div>
+          <div>
+            <span> <i class="fa fa-hashtag" aria-hidden="true"></i></span>
+            <div class="navitem">Explore</div>
+          </div>
+          <div>
+            <span><i class="fa fa-bell-o" aria-hidden="true"></i></span>
+            <div class="navitem">Notification</div>
+          </div>
+          <div>
+            <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+            <div class="navitem">Messages</div>
+          </div>
+          <div>
+            <span><i class="fa fa-bookmark-o" aria-hidden="true"></i></span>
+
+            <div class="navitem">Bookmarks</div>
+          </div>
+          <div>
+            <span><i class="fa fa-list-alt" aria-hidden="true"></i></span>
+            <div class="navitem">Lists</div>
+          </div>
+          <div>
+            <span><i class="fa fa-user-o" aria-hidden="true"></i></span>
+            <div class="navitem">Profiles</div>
+          </div>
+          <div>
+            <span><i class="fa fa-ellipsis-h" aria-hidden="true"></i></span>
+            <div class="navitem">More</div>
+          </div>
+          <button class="btn--tweet__main">Tweet</button>
+        </div>
+        <div class="personal--info">
+          <div class="profile-pic">
+            <img
+              alt="Ashish shetty"
+              draggable="true"
+              src="https://pbs.twimg.com/profile_images/1346677426168893447/kzPFQiR3_normal.jpg"
+            />
+          </div>
+          <div class="userinfo">
+            <span>ashish j shetty</span>
+            <span>@Ajshetty__</span>
+          </div>
+          <div></div>
+
+          <span class="more">
+            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+          </span>
+        </div>
       </div>
       <div class="content">
-        <div>
-          <section class="header-section">Home</section>
-          <div class="posts">
-            <div class="tweet-container">
-              <div class="section-profile">
-                <div class="profile-pic">
-                  <img
-                  alt="Ashish shetty"
-                  draggable="true"
-                  src="https://pbs.twimg.com/profile_images/1346677426168893447/kzPFQiR3_normal.jpg"
-                  
-                />
-                </div>
-              </div>
-              <div class="section-2">
-                <input placeholder="What's Happening" type="text">
-                <div class="write-items">
-                  <div class="iconbar">
-                  <div>pic1</div>
+        <section class="header-section">
+          <span>Home</span>
+          <span><i class="fa fa-paw" aria-hidden="true"></i></span>
+        </section>
+        <div class="posts">
+          <div class="profile-grid">
+            <div class="profile-pic">
+              <img
+                alt="Ashish shetty"
+                draggable="true"
+                src="https://pbs.twimg.com/profile_images/1346677426168893447/kzPFQiR3_normal.jpg"
+              />
+            </div>
+            <div class="user--feed">
+              <input
+                class="story--input"
+                placeholder="What's Happening"
+                type="text"
+              />
+              <div class="iconbar">
+                <i class="fa fa-picture-o fa-lg"></i>
 
-                  <div>pic2</div>
-                  <div>pic3</div>
-                  <div>pic4</div>
-                  <div>pic5</div> </div>
-
-                  
-              </div>
-              <div class="section-3">
-                <button>tweet</button>
+                <i class="fa fa-git-square fa-lg"></i>
+                <i class="fa fa-line-chart fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-smile-o fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-calendar-plus-o fa-lg" aria-hidden="true"></i>
               </div>
             </div>
+            <div class="tweet-button"><span>Tweet</span></div>
           </div>
-          
-            <div class="partition"></div>
-          
-          
+
+          <div class="partition"></div>
+        </div>
+        <div class="feeds">
+          <div class="profile-pic">
+            <img
+              alt="Ashish shetty"
+              draggable="true"
+              src="https://pbs.twimg.com/profile_images/1346677426168893447/kzPFQiR3_normal.jpg"
+            />
+          </div>
+          <div class="feeds-text">
+            <span>User name</span>
+            <div class="tweet-content">
+              Twitter layout design with flex box and grid.
+            </div>
+            <div class="action-icon">
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-retweet" area-hidden="true"></i>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-share-square-o"></i>
+            </div>
+          </div>
+          <span> <i class="fa fa-ellipsis-h"></i></span>
+        </div>
+        <div class="feeds">
+          <div class="profile-pic">
+            <img
+              alt="Ashish shetty"
+              draggable="true"
+              src="https://pbs.twimg.com/profile_images/1346677426168893447/kzPFQiR3_normal.jpg"
+            />
+          </div>
+          <div class="feeds-text">
+            <span>User name</span>
+            <div class="tweet-content">
+              Twitter layout design with flex box and grid.
+            </div>
+            <div class="action-icon">
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-retweet" area-hidden="true"></i>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-share-square-o"></i>
+            </div>
+          </div>
+          <span> <i class="fa fa-ellipsis-h"></i></span>
+        </div>
+        <div class="feeds">
+          <div class="profile-pic">
+            <img
+              alt="Ashish shetty"
+              draggable="true"
+              src="https://pbs.twimg.com/profile_images/1346677426168893447/kzPFQiR3_normal.jpg"
+            />
+          </div>
+          <div class="feeds-text">
+            <span>User name</span>
+            <div class="tweet-content">
+              Twitter layout design with flex box and grid.
+            </div>
+            <div class="action-icon">
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-retweet" area-hidden="true"></i>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-share-square-o"></i>
+            </div>
+          </div>
+          <span> <i class="fa fa-ellipsis-h"></i></span>
+        </div>
+        <div class="feeds">
+          <div class="profile-pic">
+            <img
+              alt="Ashish shetty"
+              draggable="true"
+              src="https://pbs.twimg.com/profile_images/1346677426168893447/kzPFQiR3_normal.jpg"
+            />
+          </div>
+          <div class="feeds-text">
+            <span>User name</span>
+            <div class="tweet-content">
+              Twitter layout design with flex box and grid.
+            </div>
+            <div class="action-icon">
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-retweet" area-hidden="true"></i>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-share-square-o"></i>
+            </div>
+          </div>
+          <span> <i class="fa fa-ellipsis-h"></i></span>
+        </div>
+        <div class="feeds">
+          <div class="profile-pic">
+            <img
+              alt="Ashish shetty"
+              draggable="true"
+              src="https://pbs.twimg.com/profile_images/1346677426168893447/kzPFQiR3_normal.jpg"
+            />
+          </div>
+          <div class="feeds-text">
+            <span>User name</span>
+            <div class="tweet-content">
+              Twitter layout design with flex box and grid.
+            </div>
+            <div class="action-icon">
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-retweet" area-hidden="true"></i>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-share-square-o"></i>
+            </div>
+          </div>
+          <span> <i class="fa fa-ellipsis-h"></i></span>
+        </div>
+        <div class="feeds">
+          <div class="profile-pic">
+            <img
+              alt="Ashish shetty"
+              draggable="true"
+              src="https://pbs.twimg.com/profile_images/1346677426168893447/kzPFQiR3_normal.jpg"
+            />
+          </div>
+          <div class="feeds-text">
+            <span>User name</span>
+            <div class="tweet-content">
+              Twitter layout design with flex box and grid.
+            </div>
+            <div class="action-icon">
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-retweet" area-hidden="true"></i>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-share-square-o"></i>
+            </div>
+          </div>
+          <span> <i class="fa fa-ellipsis-h"></i></span>
+        </div>
+        <div class="feeds">
+          <div class="profile-pic">
+            <img
+              alt="Ashish shetty"
+              draggable="true"
+              src="https://pbs.twimg.com/profile_images/1346677426168893447/kzPFQiR3_normal.jpg"
+            />
+          </div>
+          <div class="feeds-text">
+            <span>User name</span>
+            <div class="tweet-content">
+              Twitter layout design with flex box and grid.
+            </div>
+            <div class="action-icon">
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-retweet" area-hidden="true"></i>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-share-square-o"></i>
+            </div>
+          </div>
+          <span> <i class="fa fa-ellipsis-h"></i></span>
+        </div>
+        <div class="feeds">
+          <div class="profile-pic">
+            <img
+              alt="Ashish shetty"
+              draggable="true"
+              src="https://pbs.twimg.com/profile_images/1346677426168893447/kzPFQiR3_normal.jpg"
+            />
+          </div>
+          <div class="feeds-text">
+            <span>User name</span>
+            <div class="tweet-content">
+              Twitter layout design with flex box and grid.
+            </div>
+            <div class="action-icon">
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-retweet" area-hidden="true"></i>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-share-square-o"></i>
+            </div>
+          </div>
+          <span> <i class="fa fa-ellipsis-h"></i></span>
         </div>
       </div>
-      <div class="highlights">highlights</div>
+
+      <div>Highlight</div>
+      <div class="search">
+        <span>
+          <input class="search" type="text" placeholder="Search Twitter" />
+          <i class="fa fa-search"></i>
+        </span>
+      </div>
     </div>
   </body>
 </html>

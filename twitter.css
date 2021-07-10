@@ -3,49 +3,69 @@
   --border-color: rgb(47, 51, 54);
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-columns: 1.5fr 3fr 2fr;
   justify-items: center;
   grid-template-rows: 100vh;
 }
+
 .menu-div {
-  width: 7rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .menu {
-  display: grid;
-
-  grid-template-rows: auto;
-  grid-row-gap: 2rem;
+  display: flex;
   position: fixed;
-  top: 7rem;
+  top: 5rem;
+  left: 4rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.navitem {
+  margin-left: 1rem;
+  display: inline;
 }
 .personal--info {
   position: fixed;
   bottom: 1rem;
+  display: flex;
+  gap: 1.2rem;
+  left: 4rem;
 }
 
 .logo {
   position: fixed;
-  top: 2rem;
+  top: 1rem;
+  left: 4rem;
 }
+
 .header-section {
   position: fixed;
+  display: flex;
+  width: 36rem;
+  justify-content: space-between;
   top: 0;
-  left: 32%;
-  margin: 1rem;
+  padding: 1.2rem;
   border-bottom: 1px solid var(--border-color);
 }
+
 .posts {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .iconbar {
   display: flex;
-  justify-content: space-around;
+  gap: 1rem;
 }
 
 .content {
@@ -107,12 +127,15 @@
   display: flex;
 }
 .profile-pic {
-  display: block;
+  align-self: start;
 }
 
 .profile-pic img {
   width: 50px;
   border-radius: 50%;
+  padding-top: 4px;
+  flex-basis: 3rem;
+  margin-right: 0.8rem;
 }
 .section-2 {
   display: block;
@@ -121,6 +144,7 @@
 
 .section-2 input {
   margin: 5px;
+  height: 25px;
   padding: 1rem 0;
   width: 100%;
   border: none;
@@ -130,4 +154,71 @@
 
 .section-3 {
   align-self: flex-end;
+}
+
+.profile-grid {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+.user--feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-self: center;
+  justify-self: start;
+}
+
+.tweet-button {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.feeds {
+  display: grid;
+  grid-template-columns: 5rem auto 3rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.feeds-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.action-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn--tweet__main {
+  padding: 0.8rem 3rem;
+  border-radius: 20px;
+  width: 14rem;
+  background-color: skyblue;
+  border: none;
+}
+
+.tweet-button {
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  width: 5rem;
+  font-size: 1rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  padding: 8px 0px;
+  margin-bottom: 0.3rem;
+}
+
+.story--input {
+  height: 3rem;
+  width: 19rem;
 }
